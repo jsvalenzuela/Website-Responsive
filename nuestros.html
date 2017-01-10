@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Nuestros servicios</title>
+	<meta charset="UTF-8" />
+	<meta description="Contactate con nosotros." />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> 
+       <link rel="stylesheet" href="css/estilos.css" />
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+    <script src="js/bjqs.min.js"></script>
+        <script src="js/script.js"></script>
+	<script >
+	    function isMobileWidth() {
+    		return jQuery('#mobile-indicator').is(':visible');
+		}
+
+		jQuery(function(){
+
+			jQuery( "#botonMenu" ).click(function() {
+				jQuery("#menu").toggle("slow");
+			});
+
+			jQuery( window ).resize(function() {
+			  	if ( !isMobileWidth() ) {
+				  	jQuery( "#menu" ).show();
+				}else{
+					jQuery( "#menu" ).hide();
+				}
+			});
+			
+		});
+    </script>    
+</head>
+<body>
+	<div id="mobile-indicator"></div>
+	<nav>
+		<a href ="javascript:void(0)" id="botonMenu"></a>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="nuestros.html">NUESTROS SERVICIOS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</div>
+	</nav>	
+	
+	
+	<section id="contenedor">	
+	 <div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="img/aire.jpg" alt="" title="Instalación y reparación de aires acondicionados" />
+            </li>
+            <li>
+                <img src="img/canilla.jpg" alt="" title="Plomeria en general, todo tipo de arreglo" />
+            </li>
+            <li>
+                <img src="img/electricidad.jpg" alt="" title="Electricidad domicialiaria e industrial, con amplia experiencia en el rubro" />
+            </li>
+        </ul>
+    </div>
+	<div id="cont">
+	<h3><p>Red integral de servicios de plomeria, aire acondicionados y electricidad,tanto en el ambito domiciliario
+	como industrial. Mas de 20 años de experiencia en el rubro en zona sur nos avalan.</p></h3>
+	
+	</div>
+     </section>
+	
+	
+	<footer>
+		Hecho por Santiago
+	</footer>
+</body>
+</html>

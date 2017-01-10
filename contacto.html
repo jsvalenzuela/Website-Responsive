@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contacto</title>
+	<meta charset="UTF-8" />
+	<meta description="Contactate con nosotros." />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> 
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script >
+	    function isMobileWidth() {
+    		return jQuery('#mobile-indicator').is(':visible');
+		}
+
+		jQuery(function(){
+
+			jQuery( "#botonMenu" ).click(function() {
+				jQuery("#menu").toggle("slow");
+			});
+
+			jQuery( window ).resize(function() {
+			  	if ( !isMobileWidth() ) {
+				  	jQuery( "#menu" ).show();
+				}else{
+					jQuery( "#menu" ).hide();
+				}
+			});
+			
+		});
+    </script>    
+</head>
+<body>
+	<div id="mobile-indicator"></div>
+	<nav>
+		<a href ="javascript:void(0)" id="botonMenu"></a>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="nuestros.html">NUESTROS SERVICIOS</a></li>
+				<li><a class="seleccionado" href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</div>
+	</nav>	
+	<header>
+		
+	</header>	
+	<section id="contenedor">	
+		<h2>UBICACION</h2>
+		<hr>	
+		<div id="maps">
+		
+			<img src="img/mapa.jpg"width="50%" height="150"  ></img></div>
+			<h3><p>Dirección: Sirito 1195 esquina Ricchieri </p>
+			<p>Tel: 1111-2223 </p></h3>
+		</div>
+		<div id="contactform">
+			<h2>FORMULARIO DE CONTACTO</h2>
+			<hr>
+			<!-- inicio formulario -->
+			<form id="c_form" action="javascript:void(0)" name="contact">
+				<div id="wrapper_dates">
+					<label>
+						<p>Nombre:</p>
+						<input required name="nombre" id="c_name" type="text" class="c_input" placeholder="Nombre..."/>
+					</label>
+					<label>
+						<p>Email:</p>
+						<input required name="email"  id="c_mail" type="text" class="c_input" placeholder="e-mail..." />
+					</label>
+				</div>
+				<div id="wrapper_msg">
+					<label>
+						<p>Mensaje:</p>
+					<textarea required name="mensaje" id="c_msg" class="c_input" placeholder="Mensaje..."></textarea>
+				</label>
+				</div>
+				<!-- boton enviar  -->
+				<div id="c_btns">
+					<input name="send"  type="submit" value="Enviar" class="btn-b" id="c_enviar"></input>
+				</div>
+			</form>
+			<!-- fin formulario -->
+		</div>       	
+	</section>
+	<footer>
+		
+		Hecho por Santiago.
+	</footer>
+</body>
+</html>

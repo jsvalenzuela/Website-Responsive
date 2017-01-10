@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Nosotros</title>
+ 
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> 
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script >
+        function isMobileWidth() {
+            return jQuery('#mobile-indicator').is(':visible');
+        }
+
+        jQuery(function(){
+
+            jQuery( "#botonMenu" ).click(function() {
+                jQuery("#menu").toggle("slow");
+            });
+
+            jQuery( window ).resize(function() {
+                if ( !isMobileWidth() ) {
+                    jQuery( "#menu" ).show();
+                }else{
+                    jQuery( "#menu" ).hide();
+                }
+            });
+            
+        });
+    </script>    
+
+
+
+
+
+
+</head>
+<body>
+    <div id="mobile-indicator"></div>
+    <nav>
+        <a href ="javascript:void(0)" id="botonMenu"></a>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="nuestros.html">NUESTROS SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>  
+   <header>
+        
+    </header>   
+         <!-- least.js CSS-file -->
+<link href="css/least.min.css" rel="stylesheet" />
+<!-- jQuery libary -->
+<script src="js/jquery-latest.js" defer="defer"></script>
+<!-- least.js JS-file -->
+<script src="js/least.min.js" defer="defer"></script>
+<!-- Lazyload JS-file -->
+<script src="js/jquery.lazyload.js" defer="defer"></script>
+<section>
+    <div>
+		<img class="big-logo" src="img/ban1.gif"width="50%" height="150"  ></img>
+		<img class="small-logo" src="img/ban2.gif"width="50%" height="150"  ></img>
+	</div>
+	
+	<ul id="gallery">
+        <li id="fullPreview"></li>
+        
+        <li>
+            <a href="img/galeria/aire1.jpg"></a>
+            <img data-original="img/galeria/aire1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Aire Colocación
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Verificando un aire.
+                </strong> <br>Viendo un aire que presentaba fallas
+            </div>
+        </li>
+        
+        <li>
+            <a href="img/galeria/aire2.jpg"></a>
+            <img data-original="img/galeria/aire2.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Aire instalado
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Prueba final
+                </strong><br> Aquí podemos ver un aire instalado
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/electricidad1.jpg"></a>
+            <img data-original="img/galeria/electricidad1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Mediciones
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Testeo
+                </strong> <br>Este es un testeo que hacemos como control de calidad, finalizada la instalacion
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/electricidad2.jpg"></a>
+            <img data-original="img/galeria/electricidad2.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Tablero
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Montaje de un tablero trifásico.
+                </strong> <br>Trabajando en una conocida empresa de servicios
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/plomeriaplano.jpg"></a>
+            <img data-original="img/galeria/plomeriaplano.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Plomeria planos
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Planos de nuestra instalación en una torre de zona norte.
+                </strong><br> Esto fue hace 4 años atras
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/Plano.jpg"></a>
+            <img data-original="img/galeria/Plano.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Planos Instalación
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Instalación domiciliaria de 0.
+                </strong> <br>Esto fue en una casa, tuvimos que montar de 0 la red electrica y de agua.
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/plomeria1.jpg"></a>
+            <img data-original="img/galeria/plomeria1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Instalación edificio
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                           Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Trabajando con grifería.
+                </strong><br> Parte del trabajo de la torre de zona norte.
+            </div>
+        </li>
+         <li>
+            <a href="img/galeria/plomeria2.jpg"></a>
+            <img data-original="img/galeria/plomeria2.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+            
+            <div class="overLayer"></div>
+            <div class="infoLayer">
+                <ul>
+                    <li>
+                        <h2>
+                            Plomeria
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            Agrandar imagen
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projectInfo">
+                <strong>
+               Instalación sanitaria.
+                </strong> <br>Montaje de una red de agua fria.
+            </div>
+        </li>
+
+
+    </ul>
+</section>
+<script>
+$(document).ready(function(){
+    $('#gallery').least();
+});
+</script>
+
+	
+	
+
+	<footer>
+		Hecho por Santiago.
+	</footer>
+</body>
+</html>

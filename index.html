@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8" />
+	<meta description="Contactate con nosotros." />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> 
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script >
+	    function isMobileWidth() {
+    		return jQuery('#mobile-indicator').is(':visible');
+		}
+
+		jQuery(function(){
+
+			jQuery( "#botonMenu" ).click(function() {
+				jQuery("#menu").toggle("slow");
+			});
+
+			jQuery( window ).resize(function() {
+			  	if ( !isMobileWidth() ) {
+				  	jQuery( "#menu" ).show();
+				}else{
+					jQuery( "#menu" ).hide();
+				}
+			});
+			
+		});
+    </script>    
+</head>
+<body>
+	<div id="mobile-indicator"></div>
+	<nav>
+		<a href ="javascript:void(0)" id="botonMenu"></a>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="nuestros.html">NUESTROS SERVICIOS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</div>
+	</nav>	
+	
+	<section id="contenedor">	
+	<div>
+		
+
+		<div>
+		<img class="big-logo" src="img/ban1.gif"width="50%" height="150"  ></img>
+		<img class="small-logo" src="img/ban2.gif"width="50%" height="150"  ></img>
+	</div>
+		<div  id = "algo">
+		<h3><p>Soporte técnico general en plomeria, electricidad y en aires acondicionados.</p>
+		<p>	Ante cualquier consulta comuniquese con nosotros </p>
+		
+		<br>
+		<p>Dirección: Sirito 1195 esquina Ricchieri</p>
+
+		<br>
+		<p>Telefono: 1111-2223</p></h3>
+		<br>
+		<br>
+		
+				<form><input name="send" type="button" onClick="window.open('nuestros.html','_self')"  value="Entrar" class="btn-b" id="c_enviar"></form>
+		<br>
+
+	</div>
+		
+	
+
+
+
+	</section>
+	<footer>
+		
+		Hecho por Santiago.
+	</footer>
+</body>
+</html>
